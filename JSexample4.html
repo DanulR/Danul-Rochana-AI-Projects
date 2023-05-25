@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    JS keyboard events <br>
+    Keydown event:The JavaScript code listens for the keydown event and
+    displays the key that was pressed and its corresponding
+    key code in the "result" paragraph element.
+    
+    <p id="result"></p>
+    <script>
+        document.addEventListener('keydown', function(event){
+            const key = event.key;
+            const keyCode = event.keyCode;
+            document.getElementById('result').innerHTML = `Key pressed: ${key}, Key code: ${keyCode}`;
+
+        });
+    </script>
+    
+
+
+    
+</body>
+</html>
